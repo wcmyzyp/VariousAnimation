@@ -14,6 +14,8 @@
 		669E54EA1E48446500959526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669E54E91E48446500959526 /* Assets.xcassets */; };
 		669E54ED1E48446500959526 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669E54EB1E48446500959526 /* LaunchScreen.storyboard */; };
 		669E54F61E484CF400959526 /* BasicAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 669E54F51E484CF400959526 /* BasicAnimationController.m */; };
+		66D0C26E1E49B49F008D5643 /* KeyFrameAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D0C26D1E49B49F008D5643 /* KeyFrameAnimationController.m */; };
+		66D0C2711E49B8D0008D5643 /* wireAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D0C2701E49B8D0008D5643 /* wireAnimationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		669E54EE1E48446500959526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		669E54F41E484CF400959526 /* BasicAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicAnimationController.h; sourceTree = "<group>"; };
 		669E54F51E484CF400959526 /* BasicAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicAnimationController.m; sourceTree = "<group>"; };
+		66D0C26C1E49B49F008D5643 /* KeyFrameAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyFrameAnimationController.h; sourceTree = "<group>"; };
+		66D0C26D1E49B49F008D5643 /* KeyFrameAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyFrameAnimationController.m; sourceTree = "<group>"; };
+		66D0C26F1E49B8D0008D5643 /* wireAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wireAnimationController.h; sourceTree = "<group>"; };
+		66D0C2701E49B8D0008D5643 /* wireAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wireAnimationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				669E54E41E48446400959526 /* ViewController.m */,
 				669E54F41E484CF400959526 /* BasicAnimationController.h */,
 				669E54F51E484CF400959526 /* BasicAnimationController.m */,
+				66D0C26C1E49B49F008D5643 /* KeyFrameAnimationController.h */,
+				66D0C26D1E49B49F008D5643 /* KeyFrameAnimationController.m */,
+				66D0C26F1E49B8D0008D5643 /* wireAnimationController.h */,
+				66D0C2701E49B8D0008D5643 /* wireAnimationController.m */,
 				669E54E61E48446500959526 /* Main.storyboard */,
 				669E54E91E48446500959526 /* Assets.xcassets */,
 				669E54EB1E48446500959526 /* LaunchScreen.storyboard */,
@@ -156,9 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				669E54E51E48446400959526 /* ViewController.m in Sources */,
+				66D0C26E1E49B49F008D5643 /* KeyFrameAnimationController.m in Sources */,
 				669E54E21E48446400959526 /* AppDelegate.m in Sources */,
 				669E54DF1E48446300959526 /* main.m in Sources */,
 				669E54F61E484CF400959526 /* BasicAnimationController.m in Sources */,
+				66D0C2711E49B8D0008D5643 /* wireAnimationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +325,7 @@
 				669E54F31E48446500959526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

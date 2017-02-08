@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "BasicAnimationController.h"
+#import "KeyFrameAnimationController.h"
+#import "wireAnimationController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *titleArray;
@@ -22,10 +24,10 @@
     CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
     
     self.titleArray = [NSMutableArray array];
-    NSArray *firstArray = @[@"CABasicAnimation基础动画",@"CAKeyframeAnimation基础动画",@"画线动画、线条递增、递减动画",@"CATransition转场动画",@"CASpringAnimation弹簧动画"];
-    NSArray *secondArray = @[@"画线动画",@"水波纹效果",@"粒子动画-火苗效果"];
+    NSArray *firstArray = @[@"CABasicAnimation基础动画",@"CAKeyframeAnimation基础动画",@"画线动画、线条递增、递减动画"];
+//    NSArray *secondArray = @[@"画线动画",@"水波纹效果",@"粒子动画-火苗效果"];
     [self.titleArray addObject:firstArray];
-    [self.titleArray addObject:secondArray];
+//    [self.titleArray addObject:secondArray];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0,screenWidth,screenHeight) style:UITableViewStyleGrouped];
     tableView.delegate = self;
@@ -63,19 +65,21 @@
 }
 
 - (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    
-    if (section == 0) {
-        return @"动画基础示例";
-    }else{
-        return @"动画常见经典案例";
-    }
-    
+    return @"动画基础示例";
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
             BasicAnimationController *VC = [[BasicAnimationController alloc] init];
+            [self.navigationController pushViewController:VC animated:YES];
+        }else if (indexPath.row == 1){
+            KeyFrameAnimationController *VC = [[KeyFrameAnimationController alloc] init];
+            [self.navigationController pushViewController:VC animated:YES];
+        }else if (indexPath.row == 2){
+            wireAnimationController *VC = [[wireAnimationController alloc] init];
             [self.navigationController pushViewController:VC animated:YES];
         }
     }else{
